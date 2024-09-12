@@ -47,6 +47,9 @@ body{
         max-width: unset;
         padding: 0 37px;
     }
+    @media (max-width: 1025px) {
+        padding: 0 20px;
+    }
 }
 .header{
     padding: 20px 0;
@@ -89,6 +92,9 @@ body{
 }
 
 .main{
+    @media (max-width:1025px) {
+        padding-bottom: 40px;
+    }
     background-color: $bg__color;
     padding: 77px 0 122px 0;
     @media (max-width:376px) {
@@ -109,18 +115,30 @@ body{
     }
 
     &__title{
+        @media (max-width:1025px) {
+            margin-bottom: 20px;
+            margin-top: 5px;
+            font-size: 62px;
+        }
         font-weight: 600;
         font-size: 80px;
         @media (max-width:376px) {
             font-size: 40px;
             margin-bottom: 10px;
         }
+        @media (max-width: 1025px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__box{
         display: flex;
         gap: 80px;
+        @media (max-width: 1025px) {
+            gap: 40px;
+        }
     }
+
     &__info{
         display: flex;
         gap: 40px;
@@ -139,7 +157,14 @@ body{
     }
 
     &__photo{
+        @media (max-width:1025px) {
+            width: 50%;
+            flex-shrink: 0;
 
+            img {
+                width: 100%;
+            }
+        }
         @media (max-width:376px) {
             display: none;
 
@@ -172,7 +197,7 @@ body{
         max-width: 419px;
         margin-bottom: 10px;
         @media (max-width:376px) {
-                max-width: 249px;       
+                max-width: 290px;       
         }
         &_one{
             display: flex;
@@ -182,7 +207,13 @@ body{
                 content: '1';
                 font-size: 50px;
                 line-height: 0.8;
+                @media (max-width:376px) {
+                    margin-top: -10px;
             }
+            }
+            @media (max-width:376px) {
+                align-items: flex-start;
+        }
         }
         &_two{
             display: flex;
@@ -192,7 +223,13 @@ body{
                 content: '2';
                 font-size: 50px;
                 line-height: 0.8;
+                @media (max-width:376px) {
+                    margin-top: -10px;
             }
+            }
+            @media (max-width:376px) {
+                align-items: flex-start;
+        }
         }
         &_three{
             display: flex;
@@ -202,7 +239,13 @@ body{
                 content: '3';
                 font-size: 50px;
                 line-height: 0.8;
+                @media (max-width:376px) {
+                    margin-top: -10px;
             }
+            }
+            @media (max-width:376px) {
+                align-items: flex-start;
+        }
         }
         &_four{
             display: flex;
@@ -212,7 +255,63 @@ body{
                 content: '4';
                 font-size: 50px;
                 line-height: 1;
+                @media (max-width:376px) {
+                    margin-top: -10px;
+                }
+            }
+            @media (max-width:376px) {
+                align-items: flex-start;
             }
         }
     }    
+}
+
+//program 
+
+.program{
+    background-color: #b59797;
+    padding-top: 115px;
+    padding-bottom: 160px;
+    @media (max-width:1025px) {
+        padding-top: 115px;
+        padding-bottom: 160px;
+    }
+    @media (max-width:376px) {
+        padding-bottom: 160px;
+        padding-top: 115px;
+    }
+    &__title{
+        font-size: 80px;
+        color: white;
+        @media (max-width:1025px) {
+            font-size: 62px;
+        }
+        @media (max-width:376px) {
+            font-size: 40px;
+        }
+    }
+    &__items{
+        margin-top: 27px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+        border-top: 1px solid white;
+    &:last-child{
+        border-bottom: 1px solid white;
+        }
+    p:first-child{
+        align-items: center;
+        display: flex;
+    }
+    p:last-child{
+        margin-right: 7px;
+        font-size: 30px;
+    }
+    }
+
 }
