@@ -357,3 +357,64 @@ body {
   margin-right: 7px;
   font-size: 30px;
 }
+
+.tariffs {
+  background-color: #b59797;
+  padding-left: 60px;
+}
+.tariffs__wrap {
+  background-color: #FBF6F6;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+.tariffs__title {
+  font-size: 80px;
+  color: #504949;
+  margin-bottom: 25px;
+}
+.tariffs__card-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+.tariffs__card {
+  background-color: #b59797;
+  padding: 40px 32px 52px 32px;
+  color: white;
+}
+.tariffs__card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.tariffs__card li {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.tariffs__card li::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+}
+.tariffs__li_through {
+  text-decoration: line-through;
+}
+.tariffs__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.tariffs__btn {
+  padding: 17px 80px;
+  background-color: #fff;
+  border: 2px solid #8d6b5d;
+  color: #504949;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: -77px;
+}
